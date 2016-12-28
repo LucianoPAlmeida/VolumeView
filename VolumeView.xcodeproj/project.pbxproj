@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B28215A61E13E90000B5C705 /* VolumeView.h in Headers */ = {isa = PBXBuildFile; fileRef = B28215A41E13E90000B5C705 /* VolumeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B28215AD1E13E91400B5C705 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28215AC1E13E91400B5C705 /* VolumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B28215A11E13E90000B5C705 /* VolumeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VolumeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28215A41E13E90000B5C705 /* VolumeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeView.h; sourceTree = "<group>"; };
 		B28215A51E13E90000B5C705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28215AC1E13E91400B5C705 /* VolumeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B28215A41E13E90000B5C705 /* VolumeView.h */,
 				B28215A51E13E90000B5C705 /* Info.plist */,
+				B28215AC1E13E91400B5C705 /* VolumeView.swift */,
 			);
 			path = VolumeView;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					B28215A01E13E90000B5C705 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 43Z9WE284C;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28215AD1E13E91400B5C705 /* VolumeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +245,7 @@
 		B28215AA1E13E90000B5C705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 43Z9WE284C;
@@ -252,6 +258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lpa.VolumeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 		B28215AB1E13E90000B5C705 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 43Z9WE284C;
